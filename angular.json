@@ -2,12 +2,17 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "scss"
+    }
+  },
   "projects": {
     "uh-angular-sdk": {
       "projectType": "library",
       "root": "projects/uh-angular-sdk",
       "sourceRoot": "projects/uh-angular-sdk/src",
-      "prefix": "lib",
+      "prefix": "uh",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
